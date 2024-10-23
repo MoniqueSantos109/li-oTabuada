@@ -51,5 +51,5 @@ app.get('/', (req, res) => {
 
 
 app.listen(porta, host, () =>{
-    console.log("Servidor rodando em http://"+host + ":"+porta);
+    console.log("Servidor rodando em http://"+host + ":"+porta); //maneira de se pesquisar http://localhost:3000/?tabuada=3&sequencia=25
 });
