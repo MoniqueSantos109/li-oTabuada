@@ -61,5 +61,5 @@ app.get('/', (req, res) => {
 
 
 app.listen(porta, host, () =>{
-    console.log("Servidor em execução http://" + host + ":" + porta);
+    console.log('Servidor rodando em http://localhost:${porta}');
 });
