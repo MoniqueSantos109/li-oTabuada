@@ -35,6 +35,9 @@ app.get('/', (req, res) => {
                     font-family: Arial, sans-serif;
                     text-align: center;
                 }
+                table {
+                    margin: 0 auto;
+                }
                 p {
                     font-size: 18px;
                 }
