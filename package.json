@@ -1,0 +1,19 @@
+{
+  "name": "li-otabuada",
+  "version": "1.0.0",
+  "description": "lição",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoniqueSantos109/li-oTabuada.git"
+  },
+  "author": "monique",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoniqueSantos109/li-oTabuada/issues"
+  },
+  "homepage": "https://github.com/MoniqueSantos109/li-oTabuada#readme"
+}
