@@ -5,7 +5,7 @@ const host = "0.0.0.0";
 const porta = 3000;
 const app = express();
 
-function gerarTabuada(numero, sequencia) {
+function tabuada(numero, sequencia) {
     let resultado = '<table border="1" cellpadding="10" cellspacing="0">';
     for (let i = 0; i <= sequencia; i++) {
         resultado += `<tr><td>${numero} x ${i}</td><td>${numero * i}</td></tr>`;
@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
     const sequencia = parseInt(req.query.sequencia) || 10;  // Padrão para 10 caso não informado
 
     // Gera a tabuada usando a função gerarTabuada
-    const tabuadaHtml = gerarTabuada(numero, sequencia);
+    const tabuadaHtml = tabuada(numero, sequencia);
 
     // Resposta HTML para o cliente
     res.send(`
