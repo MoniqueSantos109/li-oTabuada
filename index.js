@@ -6,7 +6,13 @@ const porta = 3000;
 const app = express();
 
 function PG(requisicao, resposta){
-    resposta.send('<h1>Tabuada</h1></br>');
+    const num = parseInt(req.query.tabuada) || 0; 
+    const sq = parseInt(req.query.sq) || 0; 
+    let resul = '';
+    for (let i = 0; i <= sq; i++) {
+        resul += `<p>${num} x ${i} = ${num * i}</p>`;
+    }
+    return resul;
 }
 
 app.get("/",PG);
