@@ -12,5 +12,5 @@ function PaginaInicial(requisicao, resposta){
 app.get("/",PaginaInicial);
 
 app.listen(porta, host, () =>{
-    console.log("Servidor em execução http://" + host + ";" +porta);
+    console.log("Servidor em execução http://" + host + ":" + porta);
 });
