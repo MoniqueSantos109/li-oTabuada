@@ -6,6 +6,7 @@ const porta = 3000;
 const app = express();
 
 function tabuada(numero, sequencia) {
+    let resultado = '<table border="1" cellpadding="10" cellspacing="0">';
     for (let i = 0; i <= sequencia; i++) {
         resultado += `<tr><td>${numero} x ${i}</td><td>${numero * i}</td></tr>`;
     }
