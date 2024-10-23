@@ -14,16 +14,15 @@ function tabuada(numero, sequencia) {
     return resultado;
 }
 
-// Rota principal que captura os parâmetros da URL
 app.get('/', (req, res) => {
-    // Pega os parâmetros 'tabuada' e 'sequencia' da URL
-    const numero = parseInt(req.query.tabuada) || 1;  // Padrão para 1 caso não informado
-    const sequencia = parseInt(req.query.sequencia) || 10;  // Padrão para 10 caso não informado
+    
+    const numero = parseInt(req.query.tabuada) || 1; 
+    const sequencia = parseInt(req.query.sequencia) || 10;  
 
-    // Gera a tabuada usando a função gerarTabuada
+   
     const tabuadaHtml = tabuada(numero, sequencia);
 
-    // Resposta HTML para o cliente
+   
     res.send(`
         <!DOCTYPE html>
         <html lang="pt-BR">
@@ -34,16 +33,7 @@ app.get('/', (req, res) => {
             <style>
                 body {
                     font-family: Arial, sans-serif;
-                    background-color: #f0f0f0;
                     text-align: center;
-                    margin-top: 50px;
-                }
-                table {
-                    margin: 0 auto;
-                    background-color: #fff;
-                }
-                h1 {
-                    color: #333;
                 }
                 p {
                     font-size: 18px;
